@@ -1,0 +1,84 @@
+.admin-brands {
+  padding: 30px;
+}
+
+.brand-header {
+  margin-bottom: 20px;
+}
+
+.brand-header h2 {
+  color: #111827;
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.brand-card {
+  background: #ffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid #f1f1f1;
+}
+
+.brand-table tbody tr:hover {
+  background: #f9fafb;
+  transition: 0.2s;
+}
+
+.brand-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.brand-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.brand-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.brand-table th {
+  background: #f1f5f9;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.brand-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  color: #1f2937;   /* 👈 thêm dòng này */
+  font-weight: 500;
+}
+
+.slug-badge {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Delete*/
+.btn-delete {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}

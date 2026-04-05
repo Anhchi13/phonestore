@@ -1,0 +1,129 @@
+/* ===== PAGE ===== */
+.orders-container {
+  padding: 40px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.orders-header {
+  margin-bottom: 25px;
+}
+
+.orders-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* ===== FILTER ===== */
+.orders-filter {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.orders-filter button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+  background: #f1f5f9;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.orders-filter button:hover {
+  background: #e2e8f0;
+}
+
+.orders-filter .active {
+  background: #3b82f6;
+  color: white;
+  border: none;
+}
+
+/* ===== CARD ===== */
+.orders-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+/* ===== TABLE ===== */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th {
+  text-align: left;
+  padding: 15px;
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #334155;
+}
+
+.orders-table td {
+  padding: 15px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* ===== STATUS BADGE ===== */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.shipp {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-badge.delivered {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* ===== SELECT ===== */
+.orders-table select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+}
+
+/* ===== EMPTY DATA ===== */
+.no-data {
+  margin-top: 20px;
+  text-align: center;
+  color: #64748b;
+}
+
+/* ===== STATUS TIMELINE ===== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.timeline-item {
+  background: #f1f5f9;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}

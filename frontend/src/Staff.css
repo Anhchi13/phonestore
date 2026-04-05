@@ -1,0 +1,65 @@
+/* ===============================
+   STAFF LAYOUT CORE
+   Chỉ chứa layout chung
+   =============================== */
+
+/* ===== WRAPPER ===== */
+.staff-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #f3f4f6;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===== SIDEBAR ===== */
+.staff-sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #0f172a, #111827);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== LOGO ===== */
+.staff-sidebar .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* ===== NAV LINKS ===== */
+.staff-sidebar a {
+  text-decoration: none;
+  color: #9ca3af;
+  padding: 12px 14px;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Hover */
+.staff-sidebar a:hover {
+  background: #1f2937;
+  color: white;
+}
+
+/* Active */
+.staff-sidebar .active {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* ===== CONTENT AREA ===== */
+.staff-content {
+  flex: 1;
+  padding: 40px;
+  background: #f8fafc;
+  overflow-y: auto;
+}

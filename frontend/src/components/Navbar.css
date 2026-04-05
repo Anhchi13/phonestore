@@ -1,0 +1,289 @@
+/* =====================================================
+   NAVBAR CONTAINER
+===================================================== */
+
+/* Thanh navbar cố định trên cùng */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  z-index: 1000;
+  border-bottom: 1px solid #111;
+}
+
+/* Layout bên trong navbar */
+.nav-inner {
+  max-width: 1200px;
+  margin: auto;
+  height: 60px;
+
+  display: grid;
+
+  /* logo | menu | icon */
+  grid-template-columns: 180px 1fr 220px;
+
+  align-items: center;
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+}
+
+.logo:hover {
+  color: #ff3c3c;
+}
+
+/* =====================================================
+   MENU DANH MỤC
+===================================================== */
+
+.nav-inner nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-size: 14px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff3c3c;
+}
+
+/* =====================================================
+   ICON AREA (SEARCH + CART + USER)
+===================================================== */
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* khoảng cách giữa icon */
+  gap: 18px;
+}
+
+/* icon chung */
+.icon-btn {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* cart icon */
+.cart-icon {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* =====================================================
+   USER MENU (ICON USER + DROPDOWN)
+===================================================== */
+
+/* container icon user */
+.user-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* icon user */
+.user-icon {
+  color: white;
+  cursor: pointer;
+}
+
+/* dropdown menu */
+.dropdown {
+  position: absolute;
+
+  /* hiển thị bên dưới icon */
+  top: 38px;
+  right: 0;
+
+  background: white;
+  border-radius: 8px;
+
+  width: 180px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+
+  overflow: hidden;
+
+  /* animation */
+  animation: dropdownFade 0.2s ease;
+}
+
+/* từng item trong dropdown */
+.dropdown p {
+  padding: 10px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* item hover */
+.dropdown p:hover {
+  background: #f5f5f5;
+}
+
+/* animation dropdown */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================================================
+   SEARCH OVERLAY
+===================================================== */
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  padding: 20px 40px;
+  z-index: 9999;
+
+  animation: slideDown 0.3s ease;
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-header input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  outline: none;
+}
+
+.search-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* animation search */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* =====================================================
+   LOGIN MODAL (GIỎ HÀNG CHƯA LOGIN)
+===================================================== */
+
+.cart-login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.cart-login-box {
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 350px;
+  border-radius: 12px;
+  text-align: center;
+
+  animation: fadeInScale 0.25s ease;
+}
+
+.cart-login-box h3 {
+  margin-bottom: 10px;
+}
+
+.cart-login-box p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.cart-login-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-back {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  color: #333;        
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.btn-login {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #ff3b30;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* animation modal */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* nút đăng nhập khi chưa login */
+.login-link{
+color:white;
+cursor:pointer;
+font-size:14px;
+transition:0.2s;
+}
+
+.login-link:hover{
+color:#ff3c3c;
+}

@@ -1,0 +1,190 @@
+body{
+  background:#f3f4f6;
+  font-family:"Segoe UI",sans-serif;
+}
+
+/* CONTAINER */
+
+.auth-container{
+  position:relative;
+  width:900px;
+  max-width:95%;
+  min-height:550px;
+  margin:80px auto;
+  background:#fff;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+
+.form-container{
+  position:absolute;
+  top:0;
+  height:100%;
+  width:50%;
+  padding:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:all .6s ease-in-out;
+    z-index:2;
+
+}
+
+.login-container{
+ left:0;
+  z-index:2;
+  transform:translateX(0);
+  opacity:1;
+    background: linear-gradient(135deg,#f9f7f7,#355c6d);
+
+}
+
+.register-container{
+  left:50%;
+  transform:translateX(100%);
+  opacity:0;
+    background: linear-gradient(135deg,#f9f7f7,#355c6d);
+
+}
+
+/* FORM STYLE */
+
+form{
+  width:100%;
+  max-width:350px;
+  display:flex;
+  flex-direction:column;
+}
+
+form h2{
+  margin-bottom:25px;
+}
+
+input{
+  padding:12px;
+  margin:10px 0;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
+
+button{
+  padding:12px;
+  margin-top:15px;
+  border-radius:8px;
+  border:none;
+  background:#4b6cb7;
+  color:#fff;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  background:#3551a3;
+}
+
+/* SWITCH */
+
+.switch-text{
+  margin-top:15px;
+}
+
+.switch-text span{
+  color:#4b6cb7;
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* OVERLAY */
+
+.overlay-container{
+  position:absolute;
+  top:0;
+  left:50%;
+  width:50%;
+  height:100%;
+  overflow:hidden;
+  transition:transform .6s ease-in-out;
+  z-index:1;   
+}
+
+.overlay{
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  color:#fff;
+  position:relative;
+  left:-100%;
+  width:200%;
+  height:100%;
+  display:flex;
+  transition:transform .6s ease-in-out;
+}
+
+.overlay-panel{
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px;
+}
+
+.overlay-panel h1{
+  margin-bottom:15px;
+}
+
+.overlay-panel button{
+  background:transparent;
+  border:2px solid #fff;
+}
+
+/* ANIMATION */
+
+.auth-container.active .login-container{
+ transform:translateX(-100%);
+  opacity:0;
+}
+
+.auth-container.active .register-container{
+   transform:translateX(0);
+  opacity:1;
+  z-index:5;
+}
+
+.auth-container.active .overlay-container{
+  transform:translateX(-100%);
+}
+
+.auth-container.active .overlay{
+  transform:translateX(50%);
+}
+
+/*===Forgot Password=== */
+.forgot-link{
+  margin-top:10px;
+  font-size:14px;
+}
+
+.forgot-link span{
+  color:#4b6cb7;
+  cursor:pointer;
+}
+
+.forgot-modal{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:200;
+}
+
+.forgot-modal form{
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  width:320px;
+}

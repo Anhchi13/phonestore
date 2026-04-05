@@ -1,0 +1,90 @@
+/* ===============================
+   ADMIN CATEGORIES 
+   =============================== */
+
+.admin-categories {
+  padding: 30px;
+}
+
+/* Title */
+.page-title {
+  color: #111827;
+  font-weight: 800;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Card */
+.admin-category-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #f1f1f1;
+}
+
+/* Form */
+.category-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.category-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Table */
+.category-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.category-table th {
+  background: #f1f5f9;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.category-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+/* Hover rất nhẹ (giống Brands) */
+.category-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Slug */
+.slug-badge {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Delete */
+.btn-delete {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+

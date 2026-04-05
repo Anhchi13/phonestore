@@ -1,0 +1,219 @@
+/* ================= PAGE ================= */
+
+.product-detail-page {
+    background: #ffffff;
+    padding: 100px 80px;
+    min-height: 100vh;
+}
+
+/* ================= CONTAINER ================= */
+
+.detail-container {
+    display: flex;
+    gap: 50px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    color: #111;
+}
+
+/* ================= LEFT ================= */
+
+.detail-left {
+    width: 50%;
+}
+
+.main-image {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #eee;
+}
+
+    .main-image img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+/* 🔥 THUMBNAIL */
+.thumbnail-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+    .thumbnail-row img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+        .thumbnail-row img:hover {
+            border-color: #ff6a00;
+        }
+
+        .thumbnail-row img.active {
+            border-color: #ff3c3c;
+        }
+
+/* ================= RIGHT ================= */
+
+.detail-right {
+    width: 50%;
+}
+
+.product-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+/* ================= PRICE ================= */
+
+.price-highlight-box {
+    background: linear-gradient(135deg, #ff6a00, #ff8c00);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+/* LEFT */
+.price-left {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    min-width: 0; /* 🔥 FIX co chữ trong flex */
+}
+
+/* LABEL */
+.price-label {
+    font-size: 16px;
+}
+
+/* 🔥 GIÁ CHÍNH (FIX TO + KHÔNG CO) */
+.new-price {
+    font-size: 32px !important; /* 🔥 TO BẰNG COUNTDOWN */
+    font-weight: 900;
+    line-height: 1;
+    white-space: nowrap;
+    color: #ffffff;
+    letter-spacing: -1px;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.25);
+    flex-shrink: 0; /* 🔥 KHÔNG BỊ CO */
+}
+
+/* 🔥 GIÁ GỐC */
+.old-price {
+    font-size: 24px !important;
+    text-decoration: line-through;
+    opacity: 0.85;
+    color: #ffffff;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.vat-note {
+    font-size: 14px;
+}
+
+/* RIGHT */
+.price-right {
+    text-align: right;
+    flex: 1;
+    min-width: 150px;
+    flex-shrink: 0; /* 🔥 KHÔNG BỊ CO */
+}
+
+/* 🔥 COUNTDOWN */
+.countdown-time {
+    font-size: 32px; /* giữ chuẩn để match giá */
+    font-weight: 800;
+}
+
+.countdown-label {
+    font-size: 16px;
+}
+
+.countdown-date {
+    font-size: 14px;
+}
+
+/* ================= BOX TRẮNG ================= */
+
+.promotion-box,
+.product-description {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #eee;
+}
+
+/* ================= BUTTON ================= */
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.installment {
+    flex: 1;
+    background: #2f80ed;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buy-now {
+    flex: 1;
+    background: #ff3c3c;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= EXPIRING BADGE ================= */
+
+.expiring-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border: 2px solid #ff3c3c;
+    border-radius: 999px;
+    background: #ff3c3c;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 12px;
+    animation: pulseBadge 1.5s infinite;
+}
+
+@keyframes pulseBadge {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 60, 60, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 60, 60, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 60, 60, 0);
+    }
+}

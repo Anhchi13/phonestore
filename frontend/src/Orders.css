@@ -1,0 +1,172 @@
+.orders-page{
+  max-width:900px;
+  margin:40px auto;
+  padding:20px;
+  min-height:60vh; /* 🔥 giúp trang cao hơn để footer xuống dưới */
+}
+
+.orders-title{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+/* chưa có đơn */
+
+.no-orders{
+  text-align:center;
+  padding:120px 20px;
+  font-size:18px;
+  color:#666;
+}
+
+/* ORDER CARD */
+
+.order-card{
+  border:1px solid #eee;
+  border-radius:10px;
+  padding:20px;
+  margin-bottom:25px;
+  background:#fff;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+.order-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.order-status{
+  font-weight:600;
+}
+
+/* trạng thái */
+
+.order-status.PENDING{
+  color:#ff9800;
+}
+
+.order-status.CONFIRMED{
+  color:#2196f3;
+}
+
+.order-status.SHIPPING{
+  color:#9c27b0;
+}
+
+.order-status.DELIVERED{
+  color:#4caf50;
+}
+
+.order-status.CANCELLED{
+  color:#f44336;
+}
+
+/* ITEMS */
+
+.order-items{
+  border-top:1px solid #eee;
+  padding-top:15px;
+}
+
+.order-item{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:12px;
+}
+
+.order-item img{
+  width:70px;
+  height:70px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.order-info{
+  display:flex;
+  flex-direction:column;
+}
+
+.product-name{
+  font-weight:500;
+}
+
+.product-price{
+  color:#666;
+  font-size:14px;
+}
+
+/* FOOTER */
+
+.order-footer{
+  border-top:1px solid #eee;
+  padding-top:10px;
+  text-align:right;
+  font-weight:600;
+}
+
+.order-footer span{
+  color:#e53935;
+  margin-left:10px;
+}
+
+/*  */
+.timeline{
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+}
+
+.timeline-step{
+  text-align:center;
+  flex:1;
+}
+
+.circle{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background:#ddd;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.circle.active{
+  background:#4caf50;
+  color:white;
+}
+
+.label{
+  font-size:12px;
+  margin-top:6px;
+  color:#888;
+}
+
+.label.active{
+  color:#4caf50;
+  font-weight:600;
+}
+.cancel-btn {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+    .cancel-btn:hover {
+        background: #d9363e;
+    }
+
+.cancelled-text {
+    margin-top: 10px;
+    color: #999;
+    font-style: italic;
+}

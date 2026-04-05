@@ -1,0 +1,49 @@
+.admin-store-page {
+  padding: 30px;
+}
+
+.store-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.store-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.store-form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #e60023;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.store-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.store-table th,
+.store-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.store-table button {
+  margin-right: 8px;
+}
+
+.store-table .danger {
+  background: #c4001d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
